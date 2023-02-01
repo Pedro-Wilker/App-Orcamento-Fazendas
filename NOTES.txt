@@ -1,0 +1,30 @@
+
+=> Saude
+
+	-> Remedios 
+
+		--> Relações dos remedios
+		--> Separar remedios por tipos 
+		--> Preços 
+	
+	-> Procedimentos 
+
+		--> Parto 
+		--> Abate
+		--> Cirugia
+
+=> Materiais 
+	
+	-> Materiais de construção 
+	
+		--> Cerca 
+ 		--> Madeira 
+		--> Ferramentas 
+
+=> Mão de obra 
+	
+	-> Trabalhadores 
+
+		--> Vaqueiros 
+		--> Veterinaios 
+		--> Pedreiros 

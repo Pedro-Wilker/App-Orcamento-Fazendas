@@ -19,6 +19,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="./js/app.js"></script>
 
+
 	</head>
 
   <body>
@@ -72,15 +73,15 @@
         <div class="col-md-2 mb-2">
           <select class="form-control" id="mes">
             <option value="">Mês</option>
-            <option value="1">Janeiro</option>
-            <option value="2">Fevereiro</option>
-            <option value="3">Março</option>
-            <option value="4">Abril</option>
-            <option value="5">Maio</option>
-            <option value="6">Junho</option>
-            <option value="7">Julho</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setembro</option>
+            <option value="01">Janeiro</option>
+            <option value="02">Fevereiro</option>
+            <option value="03">Março</option>
+            <option value="04">Abril</option>
+            <option value="05">Maio</option>
+            <option value="06">Junho</option>
+            <option value="07">Julho</option>
+            <option value="08">Agosto</option>
+            <option value="09">Setembro</option>
             <option value="10">Outubro</option>
             <option value="11">Novembro</option>
             <option value="12">Dezembro</option>
@@ -99,10 +100,10 @@
             <option value="3">Compra de gado</option>
             <option value="4">Saúde</option>
             <option value="5">Material de construção</option>
-            <option value="7">Materiais</option>
-            <option value="8">Maquinas</option>
-            <option value="9">Transporte</option>
-            <option value="10">Funcionarios</option>
+            <option value="6">Materiais</option>
+            <option value="7">Maquinas</option>
+            <option value="8">Transporte</option>
+            <option value="9">Funcionarios</option>
           </select>
         </div>
       </div>
@@ -125,41 +126,22 @@
     
     </div>
 
-     <!-- Modal -->
-     <div class="modal fade" id="erroGravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header text-danger">
-            <h5 class="modal-title" id="exampleModalLabel">Erro na gravação</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="modal_conteudo">
-            Existem campos obrigatorios que não foram preenchidos
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar e corrigir</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="sucessoGravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header text-success">
-            <h5 class="modal-title" id="exampleModalLabel">Registro inserido com sucesso</h5>
+          <div id="modal_text">
+            <h5 class="modal-title" id="modal_titulo"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body" id="modal_conteudo">
-            Despesa foi cadastrada com sucesso!
+          
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Voltar</button>
+            <button type="button" id="button-back" data-dismiss="modal"></button>
           </div>
         </div>
       </div>

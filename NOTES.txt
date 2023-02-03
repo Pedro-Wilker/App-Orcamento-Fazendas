@@ -28,3 +28,11 @@
 		--> Vaqueiros 
 		--> Veterinaios 
 		--> Pedreiros 
+
+=> Pagina de registro de gado
+
+	-> Botão para Pagina
+		
+		-->Numero do boi/vaca/bezerro 
+		-->Antigo dono ou nascimento 
+		

@@ -61,6 +61,45 @@ class Bd{
 
         return despesas;
     }
+
+    pesquisar(despesa){
+        
+        let despesasFiltradas = Array();
+
+        despesasFiltradas = this .recuperarTodosRegistros()
+        
+
+        /* Filtros */
+        if(despesa.ano != ''){
+            console.log('Filtro ano')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.ano == despesa.ano);
+        }
+
+        if(despesa.mes != ''){
+            console.log('Filtro mês')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.mes == despesa.mes);
+        }
+
+        if(despesa.dia != ''){
+            console.log('Filtro dia')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.dia == despesa.dia);
+        }
+
+        if(despesa.tipo != ''){
+            console.log('Filtro tipo')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.tipo == despesa.tipo);
+        }
+        
+        if(despesa.descricao != ''){
+            console.log('Filtro descrição')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.descricao == despesa.descricao);
+        }
+
+        if(despesa.valor != ''){
+            console.log('Filtro valor')
+            despesasFiltradas =  despesasFiltradas.filter(d => d.valor == despesa.valor);
+        }
+    }
 }
 
 
@@ -94,6 +133,13 @@ function cadastrarDespesa(){
         document.getElementById("button-back").className = "btn btn-success";
 
         $('#modalRegistraDespesa').modal('show');
+
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
     }else{
 
         document.getElementById('modal_titulo').innerHTML = 'Registro Inserido incorretamente';
@@ -159,6 +205,19 @@ function loadListaDespesas(){
         linha.insertCell(3).innerHTML = "R$ " + d.valor +",00";
         
     })
+}
+
+function pesquisarDespesa(){
+    let ano = document.getElementById('ano').value;
+    let dia = document.getElementById('dia').value;
+    let mes = document.getElementById('mes').value;
+    let descricao = document.getElementById('descricao').value;
+    let tipo = document.getElementById('tipo').value;
+    let valor = document.getElementById('valor').value;
+
+    let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor);
+
+    bd.pesquisar(despesa);
 }
 
 let bd = new Bd();

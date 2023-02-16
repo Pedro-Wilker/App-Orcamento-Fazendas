@@ -61,7 +61,7 @@
  <p>
   <h5>Principais funcionalidades da versão 2.0:</h5>
   <ul>
-  <li>Genrenciamento de perfis</li>
+  <li>Gerenciamento de perfis</li>
   <li>Registro de animais com base em seus pais</li>
   <li>Registro de animais com base em seus antigos donos</li>
   <li>Registro do numero dos animais </li>

@@ -1,0 +1,54 @@
+:root {
+    --overstack: #310f80;
+    --overstack-light-hover: #f10a0a;
+    --color-gradient: linear-gradient(
+      155.34deg,
+      var(--overstack) 30.41%,
+      var(--overstack-light-hover) 100%
+    );
+  }
+  
+  .content {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  
+  .login input {
+    width: 350px;
+    height: 35px;
+    border: 0;
+    margin: 10px 0;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+  }
+  
+  .login input:focus {
+    outline: 0;
+  }
+  
+  .login {
+    width: 100%;
+  }
+  
+  .login-btn {
+    width: 90px;
+    height: 40px;
+    background: var(--color-gradient);
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .login-btn:hover {
+    filter: brightness(0.9);
+  }

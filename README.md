@@ -12,8 +12,8 @@
   
   <h5>Principais funcionalidades:</h5>
   <ul>
-  <li>Genrenciamento de despesas</li>
-  <li>Genrenciamento de seu orçamento </li>
+  <li>Gerenciamento de despesas</li>
+  <li>Gerenciamento de seu orçamento </li>
   <li>Registro de animais com base em seus pais</li>
   <li>Registro de animais com base em seus antigos donos</li>
   <li>Registro do numero dos animais </li>

@@ -23,3 +23,7 @@
   
   </h5>
 </p>
+
+<hr/>
+
+<h3> &#10140; Primeira versão do aplicativo e-Orçamento Rural</h3>

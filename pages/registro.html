@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/registro.css" />
 
-     <!-- Bootstrap início -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <!-- Bootstrap fim -->    
 
-    <script src="../js/registro.js" type="text/javascript"></script>
+    
 
 </head>
 <body>
 
-  <form class="regs" action="index.html">
+  <form id="cadastro-form" class="regs" action="index.html">
     <div
       class="container"
       style="margin-top: 75px; font-family: Bradley Hand, cursive"
@@ -27,18 +25,19 @@
     >
       <img class="logo mb-4" src="../images/log.png" alt="Logo" />
       <span class="feedback"></span>
-      <input type="text" name="Nome" placeholder="Nome" />
-      <input type="text" name="Sobrenome" placeholder="Sobrenome" />
+      <input id="name" type="text" name="Nome" placeholder="Nome" />
+      <input id="sobrename" type="text" name="Sobrenome" placeholder="Sobrenome" />
+      <input id="email" type="text" name="email" placeholder="E-mail" />
 
-      <input type="text" name="email" placeholder="E-mail" />
-      <input type="password" name="password" placeholder="Senha" />
-      <button class="buttonRegs" id="button-Regs">Cadastrar</button>
+      <input id="password" type="password" name="password" placeholder="Senha" />
+      <button class="buttonRegs" id="button-Regs" type="submit">Cadastrar</button>
       <p class="text-center mt-2">
-        Já possui cadastro? <a href="../login.html">clique aqui</a>
+        Já possui cadastro? <a href="../home.html">clique aqui</a>
       </p>
     </div>
   </form>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="../js/registro.js" type="text/javascript"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

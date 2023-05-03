@@ -9,4 +9,4 @@ function fillProfileData() {
   const emailField = document.getElementById('email');
   const passwordField = document.getElementById('password');
 
-  nameField.value = profile.name; */
+  nameField.value = profile.name;  */

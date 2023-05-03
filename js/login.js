@@ -2,6 +2,8 @@ const form = document.querySelector('form');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
+form.addEventListener('submit', login);
+
 function login(event) {
   event.preventDefault();
 
@@ -15,6 +17,5 @@ function login(event) {
   } else {
     alert('Email ou senha incorretos. Tente novamente.');
   }
+  window.location.href = '../pages/index.html';
 }
-
-form.addEventListener('submit', login);

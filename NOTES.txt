@@ -41,4 +41,4 @@
 	   <input id="photo" type="file" id="photo" name="photo">
 	   PRECISA SER ADICIONADO NA ABA PARA O PERFIL PROPRIO
 
-=> Separas pages tela de login e cadastro diferentes locais para tela de app
+=> Separas pages tela de login e cadastro diferentes locais para tela de app Feito

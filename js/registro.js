@@ -24,5 +24,5 @@ form.addEventListener('submit', function(event) {
 
   localStorage.setItem('profile', JSON.stringify(profile));
 
-  window.location.href = '../index.html';
+  window.location.href = '../home.html';
 });

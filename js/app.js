@@ -69,7 +69,7 @@ class Bd{
         despesasFiltradas = this .recuperarTodosRegistros()
         
 
-        /* Filtros */
+     
         if(despesa.ano != ''){
             console.log('Filtro ano')
             despesasFiltradas =  despesasFiltradas.filter(d => d.ano == despesa.ano);
@@ -163,13 +163,11 @@ function loadListaDespesas(){
 
     despesas.forEach(function(d){
 
-        /* Criando tr */
+        
         let linha = listasConsultas.insertRow();
 
-        /* Criando td */
         linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`;
 
-        /* Ajustando o tipo */
         switch(d.tipo){
 
             case '1': d.tipo = 'Alimentação'

@@ -31,6 +31,8 @@
 <p> <h4> Nesta primeira versão do aplicativo, é possivel utilizar as funcioladidades principais do app como o registro de animais, gerenciamento de despesas, gerenciamento de orçamento, consulta de registro e despesas e a criação de usuarios. </h4> </p> 
 
 <p>
+ 
+ <h3> Atenção: VERSÃO BETA </h3>
 
 
 <h5>&#10140; Página de cadastro</h5>

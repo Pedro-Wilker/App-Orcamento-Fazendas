@@ -12,8 +12,8 @@ form.addEventListener('submit', function(event) {
     alert('Todos os campos são obrigatórios');
     form.insertBefore(errorDiv, form.firstChild); 
     return; 
-  }
-  
+  } 
+
   const profile = {
     name,
     sobrename,
@@ -24,5 +24,5 @@ form.addEventListener('submit', function(event) {
 
   localStorage.setItem('profile', JSON.stringify(profile));
 
-  window.location.href = '../pages/index.html';
+  window.location.href = '../index.html';
 });
